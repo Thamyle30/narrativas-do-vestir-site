@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Workshops · Narrativas do Vestir</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Archivo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  :root {
+    --gelo: #DEDDD8; --gelo-2: #E7E6E1; --branco: #F2F1EC;
+    --cacau: #4A3B36; --cacau-soft: #6B5A52; --tinta: #2A2622;
+    --grafite: #4A4641; --cinza-txt: #6E6A64; --manteiga: #D9C9A3;
+    --serif: 'Cormorant Garamond', Georgia, serif;
+    --sans: 'Archivo', system-ui, sans-serif;
+    --mono: 'Space Mono', monospace;
+  }
+  html { scroll-behavior: smooth; }
+  body { font-family: var(--sans); background-color: var(--gelo); color: var(--tinta); font-size: 16px; line-height: 1.6; -webkit-font-smoothing: antialiased; position: relative; overflow-x: hidden; }
+  body::after { content: ''; position: fixed; inset: 0; z-index: 1000; pointer-events: none; opacity: 0.05; mix-blend-mode: multiply; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E"); }
+  nav { position: fixed; top: 0; left: 0; right: 0; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 1.6rem 3rem; background: rgba(222,221,216,0.92); backdrop-filter: blur(6px); }
+  .nav-logo { font-family: var(--sans); font-size: 0.8rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: var(--tinta); text-decoration: none; line-height: 1.1; }
+  .nav-back { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; color: var(--grafite); text-decoration: none; transition: color 0.2s; }
+  .nav-back:hover { color: var(--cacau); }
+  footer { padding: 3rem; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 1.5rem; background: var(--gelo); }
+  .footer-logo { font-family: var(--sans); font-weight: 600; font-size: 0.78rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--tinta); }
+  .footer-copy { font-family: var(--mono); font-size: 0.65rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--cinza-txt); }
+  .footer-social a { font-family: var(--mono); font-size: 0.68rem; letter-spacing: 0.05em; text-transform: uppercase; color: var(--grafite); text-decoration: none; border-bottom: 1px solid var(--grafite); padding-bottom: 2px; }
+  @media (max-width: 900px) { nav { padding: 1.2rem 1.3rem; } footer { padding: 2.5rem 1.3rem; flex-direction: column; text-align: center; } }
+
+  .em-breve { min-height: 90vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 8rem 2rem 4rem; }
+  .eb-kicker { font-family: var(--mono); font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--cacau); margin-bottom: 2.5rem; }
+  .eb-title { font-family: var(--sans); font-weight: 500; font-size: clamp(2.6rem, 7vw, 5.5rem); line-height: 1; letter-spacing: -0.02em; color: var(--tinta); margin-bottom: 1.2rem; }
+  .eb-title em { font-family: var(--serif); font-style: italic; font-weight: 400; color: var(--cacau); }
+  .eb-sub { font-family: var(--serif); font-style: italic; font-size: clamp(1.2rem, 2vw, 1.7rem); color: var(--grafite); max-width: 520px; margin-bottom: 3rem; line-height: 1.5; }
+  .eb-note { font-family: var(--mono); font-size: 0.72rem; letter-spacing: 0.05em; color: var(--cinza-txt); }
+  .eb-line { width: 50px; height: 1px; background: var(--cacau-soft); margin: 0 auto 2.5rem; }
+</style>
+</head>
+<body>
+<nav>
+  <a href="narrativas-do-vestir.html" class="nav-logo">Narrativas do Vestir</a>
+  <a href="narrativas-do-vestir.html" class="nav-back">← voltar ao início</a>
+</nav>
+<section class="em-breve">
+  <p class="eb-kicker">Encontros</p>
+  <h1 class="eb-title">Workshops <em>&amp;</em><br>Palestras</h1>
+  <div class="eb-line"></div>
+  <p class="eb-sub">Roupa como linguagem, comportamento e narrativa. Encontros para quem quer aprofundar o olhar sobre o próprio vestir.</p>
+  <p class="eb-note">Em breve.</p>
+</section>
+<footer>
+  <p class="footer-logo">Narrativas do Vestir</p>
+  <p class="footer-copy">© 2026 Thamyle Marinho</p>
+  <div class="footer-social"><a href="https://www.instagram.com/thamylemarinho/" target="_blank">Instagram</a></div>
+</footer>
+</body>
+</html>
